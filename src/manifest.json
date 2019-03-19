@@ -1,0 +1,47 @@
+{
+  "manifest_version": 2,
+  "name": "Twitter Video Downloader",
+  "description": "For downloading videos from twitter web.",
+  "version": "1.0.0",
+
+  "permissions": [
+    "*://twitter.com/*",
+    "*://*.twitter.com/*",
+    "*://*.twimg.com/*",
+    "storage",
+    "downloads",
+    "tabs"
+  ],
+
+  "icons": {
+    "16": "/img/favicon-16x16.png",
+    "32": "/img/favicon-32x32.png",
+    "96": "/img/favicon-96x96.png",
+    "256": "/img/favicon-256x256.png"
+  },
+
+  "browser_action": {
+    "default_title": "Twitter Video Downloader",
+    "default_icon": {
+      "16": "/img/favicon-16x16.png",
+      "32": "/img/favicon-32x32.png",
+      "96": "/img/favicon-96x96.png",
+      "256": "/img/favicon-256x256.png"
+    },
+    "default_popup": "/index.html"
+ },
+
+  "content_scripts": [{
+    "matches": ["*://twitter.com/*"],
+    "css": ["/css/twitter_video_assist_client.css"],
+    "js": ["/js/jquery-3.3.1.min.js", "/js/twitter_video_assist_client.js"]
+  }],
+ 
+
+  "background": {
+    "page": "/index.html?page=background"
+  },
+
+  "incognito": "split",
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
+}
