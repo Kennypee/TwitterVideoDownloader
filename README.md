@@ -1,6 +1,3 @@
-Development Notes for Pinboard Pin
-==================================
-
 This extension downloads vidoe from Twitter.
 
 The web extension has been created using [Angular](https://angular.io/) and the [Angular CLI](https://github.com/angular/angular-cli). Its the angular alternative to [TwitterVideoAssistChrome](https://github.com/Flkalas/TwitterVideoAssistChrome)
