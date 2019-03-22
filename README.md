@@ -1,27 +1,34 @@
-# TwiterVidDownload
+Development Notes for Pinboard Pin
+==================================
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.2.
+This extension downloads vidoe from Twitter.
 
-## Development server
+The web extension has been created using [Angular](https://angular.io/) and the [Angular CLI](https://github.com/angular/angular-cli). Its the angular alternative to [TwitterVideoAssistChrome](https://github.com/Flkalas/TwitterVideoAssistChrome)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Installation
+------------
 
-## Code scaffolding
+Install the application for development:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+    npm install
+    
+On Windows, use latest Node or Yarn if installation fails.
 
-## Build
+Building and testing
+--------------------
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Build extension for development:
 
-## Running unit tests
+    npm run build
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Test extension with Firefox:
 
-## Running end-to-end tests
+    npm run test
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Build unsigned extension for production:
 
-## Further help
+    npm run build:prod
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+Package unsigned extension as zip file:
+
+    npm run build:zip
